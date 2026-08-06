@@ -302,6 +302,7 @@ body.bk-snap .bk-card{transition:none!important}   /* 전체뷰→이동 시 카
 <div class="fab-menu" id="fab-menu">
   <button class="fab-act" onclick="openActiveBets()"><span class="fab-ic">🔥</span>베팅중</button>
   <button class="fab-act" onclick="openFeedback()"><span class="fab-ic">💬</span>피드백</button>
+  <a class="fab-act" href="https://buymeacoffee.com/yuemyname" target="_blank" rel="noopener" onclick="closeFab()" style="text-decoration:none"><span class="fab-ic">☕</span>후원하기</a>
   <button class="fab" onclick="toggleFab()" aria-label="메뉴"><span class="fab-plus">+</span></button>
 </div>
 
@@ -341,7 +342,11 @@ body.bk-snap .bk-card{transition:none!important}   /* 전체뷰→이동 시 카
       <div class="field"><label>이름</label><input class="input" id="fb-name" maxlength="5" placeholder="이름 (한글/영문/숫자, 5자)"></div>
       <div class="field"><label>내용</label><input class="input" id="fb-msg" maxlength="100" placeholder="의견을 남겨주세요"></div>
       <div class="fb-cnt"><span id="fb-c">0</span>/100</div>
-      <button class="btn btn-g" onclick="sendFeedback()" style="margin-bottom:18px">보내기</button>
+      <button class="btn btn-g" onclick="sendFeedback()" style="margin-bottom:14px">보내기</button>
+      <a href="https://buymeacoffee.com/yuemyname" target="_blank" rel="noopener"
+         style="display:flex;align-items:center;justify-content:center;gap:7px;margin-bottom:18px;padding:11px 12px;border-radius:12px;background:rgba(255,221,0,.12);border:1px solid rgba(255,221,0,.45);color:#ffdd00;font-size:13px;font-weight:700;text-decoration:none">
+        ☕ 개발자에게 커피 한 잔 사주기
+      </a>
       <div id="fb-list"></div>
     </div>
   </div>
